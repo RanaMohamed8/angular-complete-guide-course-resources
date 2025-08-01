@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { FormControl, FormArray, FormGroup, ReactiveFormsModule, Validators, AbstractControl } from '@angular/forms';
+import { FormControl, FormArray, FormGroup, ReactiveFormsModule, Validators, AbstractControl} from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 function equalValues(controlName1: string, controlName2:string)
 {
@@ -18,7 +19,7 @@ function equalValues(controlName1: string, controlName2:string)
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [ReactiveFormsModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css',
 })
